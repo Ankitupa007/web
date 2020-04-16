@@ -1,3 +1,7 @@
+@font-face {
+	font-family: font6;
+	src: url("proxima_ssv/Proxima\ Nova\ Black.otf");
+  }
 .font1 {
 	font-family: 'Lato', sans-serif;
 }
@@ -73,6 +77,9 @@
 	.title {
 		font-size: 40px;
 	}
+	.welcome-img{
+		display: inline-block;
+	}
 }
 
 @media only screen and (min-width: 600px) {
@@ -116,6 +123,9 @@
 	.img {
 		width: 200px;
 	}
+	.welcome-img{
+		display: inline-block;
+	}
 }
 
 .row::after {
@@ -137,7 +147,7 @@ body {
 /* header */
 
 .header {
-	background-color: white;
+	background-color:#fff;
 	width: 100%;
 	height: 100
 }
@@ -157,7 +167,7 @@ body {
 .header li a {
 	display: block;
 	font-weight: 900;
-	color: #003cfe;
+	color: black;
 	padding: 20px 20px;
 	text-decoration: none;
 }
@@ -167,8 +177,8 @@ body {
 	float: left;
 	font-weight: 900;
 	font-size: 2em;
-	color: #003cfe;
-	background: white;
+	color: #000;
+	background:#fff;
 	padding: 10px 20px;
 	text-decoration: none;
 }
@@ -196,7 +206,7 @@ body {
 }
 
 .header .menu-icon .navicon {
-	background: #003cfe;
+	background: #0f0f0f;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -206,7 +216,7 @@ body {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: #003cfe;
+	background: #000;
 	content: '';
 	display: block;
 	height: 100%;
@@ -279,15 +289,15 @@ body {
 }
 
 .bigtext {
-	font-size: 2.5rem;
-	color: #003cfe;
+	font-size: 5vw;
+	color: #fff;
 	font-weight: 800;
 	font-size: 50px;
 }
 
 .introtext {
 	font-weight: 300;
-	color: #616161;
+	color: whitesmoke;
 }
 
 .btn {
@@ -336,15 +346,16 @@ body {
 
 .section_1 {
 	margin-top: auto;
+	background:url("https://syndicode.com/wp-content/themes/syndicode/assets/images/footer-contact-form2.svg") no-repeat;
 	padding: 1rem;
-	background: url("https://images.ui8.net/res/robot/image/upload/wxpj77b3kvvrhpvqqzbz/1488249116.jpg") no-repeat;
 	background-size: cover;
+	box-shadow: inset 0 0 0 500px RGB(0,0, 0, 1);
 	padding-bottom: 5rem;
 }
 
 .section_2 {
-	background-color: #003cfe;
-	color: #fff;
+	background-color:#fff;
+	color: #000;
 }
 
 .section_3 {
@@ -352,7 +363,7 @@ body {
 	height: 100vh;
 	background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/0ebb2560598659.5a535708af18f.jpg");
 	background-size: cover;
-	box-shadow: inset 0 0 0 500px RGB(255, 255, 255, 0);
+	
 }
 
 .section_4 {
@@ -378,6 +389,7 @@ body {
 .product_content {
 	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 	background-color: #fff;
+	border:5px solid black;
 	width: 250px;
 	height: 200px;
 	border-radius: 10px;
@@ -436,4 +448,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+.welcome-img{
+	
 }
