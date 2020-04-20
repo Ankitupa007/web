@@ -1,7 +1,8 @@
 @font-face {
 	font-family: font6;
 	src: url("proxima_ssv/Proxima\ Nova\ Black.otf");
-  }
+}
+
 .font1 {
 	font-family: 'Lato', sans-serif;
 }
@@ -20,6 +21,10 @@
 
 .font5 {
 	font-family: 'Montserrat', sans-serif;
+}
+
+.font6 {
+	font-family: font6;
 }
 
 * {
@@ -77,7 +82,7 @@
 	.title {
 		font-size: 40px;
 	}
-	.welcome-img{
+	.welcome-img {
 		display: inline-block;
 	}
 }
@@ -123,9 +128,6 @@
 	.img {
 		width: 200px;
 	}
-	.welcome-img{
-		display: inline-block;
-	}
 }
 
 .row::after {
@@ -141,15 +143,18 @@
 body {
 	margin: 0;
 	padding: 0;
+	font-size: 100%;
 }
 
 
 /* header */
 
 .header {
-	background-color:#fff;
+	background-color: #004387;
 	width: 100%;
-	height: 100
+	top: 0;
+	position: fixed;
+	z-index: 8000;
 }
 
 .header:hover {
@@ -167,18 +172,23 @@ body {
 .header li a {
 	display: block;
 	font-weight: 900;
-	color: black;
+	color: #fff;
 	padding: 20px 20px;
 	text-decoration: none;
+}
+
+.header li a:hover {
+	transition: 0.3s;
+	color: #f7af02;
 }
 
 .header .logo {
 	display: block;
 	float: left;
 	font-weight: 900;
-	font-size: 2em;
-	color: #000;
-	background:#fff;
+	font-size: 2.5rem;
+	color: #fff;
+	background: #004387;
 	padding: 10px 20px;
 	text-decoration: none;
 }
@@ -189,7 +199,7 @@ body {
 .header .menu {
 	clear: both;
 	max-height: 0;
-	background-color: #fff;
+	background-color: #004387;
 	transition: max-height .2s ease-out;
 }
 
@@ -198,7 +208,7 @@ body {
 
 .header .menu-icon {
 	cursor: pointer;
-	display: inline-block;
+	
 	float: right;
 	padding: 28px 20px;
 	position: relative;
@@ -206,7 +216,7 @@ body {
 }
 
 .header .menu-icon .navicon {
-	background: #0f0f0f;
+	background: #fff;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -216,7 +226,7 @@ body {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: #000;
+	background: #fff;
 	content: '';
 	display: block;
 	height: 100%;
@@ -275,7 +285,7 @@ body {
 		z-index: 3;
 		clear: none;
 		float: right;
-		background-color: #fff;
+		background-color: #004387;
 		max-height: none;
 	}
 	.header .menu-icon {
@@ -283,16 +293,39 @@ body {
 	}
 }
 
+
+/* Section start */
+
+@media screen and (min-width:600px) {
+	.img {
+		width: 400px;
+	}
+}
+
+.section {
+	padding: 2rem;
+	height: auto;
+}
+
 .img {
 	border-radius: 10px;
 	max-width: 100%;
 }
 
+
+/* Section 1 start */
+
+.section-1 {
+	padding: 1rem;
+	background-color: #004387;
+	box-shadow: inset 0 0 0 500px RGB(0, 0, 0, 0);
+	margin-top: 2rem;
+}
+
 .bigtext {
-	font-size: 5vw;
+	font-size: 40px;
 	color: #fff;
 	font-weight: 800;
-	font-size: 50px;
 }
 
 .introtext {
@@ -300,104 +333,237 @@ body {
 	color: whitesmoke;
 }
 
-.btn {
-	text-align: center;
-}
-
 .contact {
 	border-radius: 100px;
+	text-align: center;
 	font-weight: 800;
 	padding: 1rem;
 	text-decoration: none;
 	color: #fff;
-	background: #003cfe;
+	background: #f7af02;
 }
 
-.text_2 {
-	text-align: center;
-}
-
-.title {
-	font-size: 28px;
-	font-weight: 900;
-}
-
-.smalltext {
-	font-weight: 300;
-}
-
-.illust_2 {
-	text-align: center;
-}
-
-.illust_3 {
-	text-align: center;
-}
-
-.illust_4 {
-	text-align: center;
-}
-
-.section {
-	padding: 2rem;
-	height: auto;
-	text-align: center;
-}
-
-.section_1 {
-	margin-top: auto;
-	background:url("https://syndicode.com/wp-content/themes/syndicode/assets/images/footer-contact-form2.svg") no-repeat;
-	padding: 1rem;
-	background-size: cover;
-	box-shadow: inset 0 0 0 500px RGB(0,0, 0, 1);
-	padding-bottom: 5rem;
-}
-
-.section_2 {
-	background-color:#fff;
-	color: #000;
-}
-
-.section_3 {
-	color: #003cfe;
-	height: 100vh;
-	background-image: url("https://mir-s3-cdn-cf.behance.net/project_modules/1400/0ebb2560598659.5a535708af18f.jpg");
-	background-size: cover;
-	
-}
-
-.section_4 {
-	background-color: #003cfe;
-	color: #fff;
-	height: 100vh;
-}
-
-.section_5 {
-	background-color: #FFF;
-	color: #003cfe;
-	height: 100vh;
-}
-
-.product {
-	padding: 2rem;
+.contact-via-wa {
+	border-radius: 100px;
+	font-weight: 800;
 	margin: auto;
+	padding: 1rem;
+	text-decoration: none;
+	color: #fff;
+	background: #25D366;
+}
+
+.contact-via-fbm {
+	border-radius: 100px;
+	font-weight: 800;
+	margin: auto;
+	padding: 1rem;
+	text-decoration: none;
+	color: #fff;
+	background: #0084FF;
+}
+
+.contact-via-mail {
+	border-radius: 100px;
+	font-weight: 800;
+	margin: auto;
+	padding: 1rem;
+	text-decoration: none;
+	color: #fff;
+	background: #D44638;
+}
+
+.illust-1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.product_content {
-	box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+.img-1 {
+	max-width: 100%;
+}
+
+
+/* Common Section Elements  */
+
+.title {
+	font-size: 30px;
+	font-weight: 900;
+	color: black;
+}
+
+.title-2 {
+	font-size: 30px;
+	font-weight: 900;
+	color: #fff;
+}
+
+.smalltext {
+	font-weight: 300;
+	font-size: 15px;
+	color: grey;
+}
+
+.smalltext-2 {
+	font-weight: 300;
+	font-size: 15px;
+	color: #fcfcfc;
+}
+
+.nomination {
+	color: #f7af02;
+	text-decoration: solid;
+	text-decoration-color: #f7af02;
+}
+
+
+/* section 2 start */
+
+.section-2 {
 	background-color: #fff;
-	border:5px solid black;
-	width: 250px;
-	height: 200px;
+	color: #000;
+}
+
+
+/* Section 3 start */
+
+.section-3 {
+	color: #000;
+	background-color: #fff;
+}
+
+.cards {
+	padding: 1rem;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 1rem;
+	margin-bottom: -2rem;
+}
+
+
+/* Screen larger than 600px? 3 columns */
+
+@media (min-width: 600px) {
+	.cards {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+
+.flip-card {
+	background-color: transparent;
+	color: white;
 	border-radius: 10px;
+	height: 200px;
+	margin: 1rem;
+	perspective: 1000px;
+        
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius:10px;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+	box-shadow: 0 20px 40px -7px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	padding: 1rem;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+	background-color: rgb(250, 250, 250);
+	color: black;
+	font-size: 10px;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+	background-color: #f7af02;
+	color: white;
+	padding: 1rem;
+	transform: rotateY(180deg);
+}
+
+
+/* Section 4 start */
+
+.section-4 {
+	background-color: #004387;
+	color: #fff;
+	height: 100%;
+	text-align: center;
+}
+
+
+/* Section 5 start */
+
+.section-5 {
+	background: #fff;
+}
+
+.points {
+	padding: 1rem;
+}
+
+.point-title {
+	color: #000;
+	font-size: 30px;
+}
+
+.point-no {
+	width: 50px;
+	height: 50px;
+	padding: 1rem;
+	background: #f7af02;
+	color: #fff;
+}
+
+.point-text {
+	font-weight: 300;
+	font-size: 15px;
+	color: grey;
 }
 
 .footer {
 	display: block;
-	background: rgb(0, 0, 0);
+	background-color: #004387;
 	padding: 1rem;
 	color: #fff;
 }
@@ -413,13 +579,9 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
-
-
-}
 .footer:placeholder {
 	color: #fff;
 }
-.footer-copy {}
 .footer-icons a {
 	color: #fff;
 	padding: 20px 20px;
@@ -429,18 +591,35 @@ body {
 	padding: 0.7rem;
 	text-decoration: none;
 	border: 2px solid white;
-	;
+	width: 100%;
 	color: #fff;
-	background: #003cfe;
+	background: #f7af02;
+}
+@media screen and (min-width:600px) {
+	.footer-btn {
+		width: 40%;
+	}
+	*{
+		font-size: 100%;
+
+	}
+	h1{
+		font-size: 3rem;
+	}
+	h3{
+		font-size: 2rem;;
+	}
 }
 .footer-inpt {
-	border-color: #fff;
-	color: #fff;
-	background: none;
+	border: 1px solid black;
+	color: black;
+	background: white;
 	padding: 0.7rem;
+	width: 50vh;
 }
 .footer-inpt::placeholder {
-	color: #fafafa;
+	color: black;
+	font-weight: 300;
 }
 .contact-item {
 	padding: 1rem;
@@ -449,6 +628,24 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-.welcome-img{
-	
+.link2:hover~hr {
+	margin-left: 25%;
+}
+.link3:hover~hr {
+	margin-left: 50%;
+}
+.link4:hover~hr {
+	margin-left: 75%;
+}
+hr {
+	height: .25rem;
+	width: 25%;
+	margin: 0;
+	background: #f7af02;
+	border: none;
+	transition: .3s ease-in-out;
+}
+.service-icon {
+	font-size: 40px;
+	color: #f7af02;
 }
