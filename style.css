@@ -1,27 +1,33 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, address, section, video, audio {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    border: 0;
+    outline: 0;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
 @font-face {
 	font-family: font6;
 	src: url("proxima_ssv/Proxima\ Nova\ Black.otf");
 }
 
-.font1 {
-	font-family: 'Lato', sans-serif;
+@font-face {
+	font-family: font1;
+	src: url("proxima_ssv/Proxima\ Nova\ Thin.otf");
 }
 
-.font2 {
-	font-family: 'Montserrat', sans-serif;
+.font1{
+	font-family: font1;
 }
+
 
 .font3 {
 	font-family: 'Nunito', sans-serif;
 }
 
-.font4 {
-	font-family: 'Archivo Black', sans-serif;
-}
-
-.font5 {
-	font-family: 'Montserrat', sans-serif;
-}
 
 .font6 {
 	font-family: font6;
@@ -80,7 +86,7 @@
 		width: 200px;
 	}
 	.title {
-		font-size: 40px;
+		font-size: 50px;
 	}
 	.welcome-img {
 		display: inline-block;
@@ -298,7 +304,7 @@ body {
 
 @media screen and (min-width:600px) {
 	.img {
-		width: 400px;
+		width: 550px;
 	}
 }
 
@@ -308,8 +314,9 @@ body {
 }
 
 .img {
-	border-radius: 10px;
+	
 	max-width: 100%;
+
 }
 
 
@@ -320,10 +327,11 @@ body {
 	background-color: #004387;
 	box-shadow: inset 0 0 0 500px RGB(0, 0, 0, 0);
 	margin-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .bigtext {
-	font-size: 40px;
+	font-size: 60px;
 	color: #fff;
 	font-weight: 800;
 }
@@ -331,12 +339,14 @@ body {
 .introtext {
 	font-weight: 300;
 	color: whitesmoke;
+	font-size:25px;
 }
 
 .contact {
 	border-radius: 100px;
 	text-align: center;
 	font-weight: 800;
+	font-size: 20px;
 	padding: 1rem;
 	text-decoration: none;
 	color: #fff;
@@ -344,9 +354,10 @@ body {
 }
 
 .contact-via-wa {
-	border-radius: 100px;
+	width: 100px;;
 	font-weight: 800;
 	margin: auto;
+	border-radius:50%;
 	padding: 1rem;
 	text-decoration: none;
 	color: #fff;
@@ -354,8 +365,9 @@ body {
 }
 
 .contact-via-fbm {
-	border-radius: 100px;
+	width: 100px;
 	font-weight: 800;
+	border-radius: 50%;
 	margin: auto;
 	padding: 1rem;
 	text-decoration: none;
@@ -364,55 +376,60 @@ body {
 }
 
 .contact-via-mail {
-	border-radius: 100px;
+	width: 100px;
 	font-weight: 800;
+	border-radius: 50%;
 	margin: auto;
 	padding: 1rem;
 	text-decoration: none;
 	color: #fff;
 	background: #D44638;
 }
-
-.illust-1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.contact-via-wa , .contact-via-fbm , .contact-via-mail{
+margin:5px;
+}
+.illust {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .img-1 {
 	max-width: 100%;
+
 }
 
 
 /* Common Section Elements  */
 
 .title {
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 900;
 	color: black;
 }
 
 .title-2 {
-	font-size: 30px;
+	font-size: 50px;
 	font-weight: 900;
 	color: #fff;
 }
 
 .smalltext {
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 25px;
 	color: grey;
 }
 
 .smalltext-2 {
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 25px;
 	color: #fcfcfc;
 }
 
 .nomination {
 	color: #f7af02;
 	text-decoration: solid;
+	font-size:25px;
 	text-decoration-color: #f7af02;
 }
 
@@ -434,10 +451,10 @@ body {
 
 .cards {
 	padding: 1rem;
-	max-width: 1200px;
+
 	margin: 0 auto;
 	display: grid;
-	grid-gap: 1rem;
+	grid-gap: 2rem;
 	margin-bottom: -2rem;
 }
 
@@ -446,11 +463,22 @@ body {
 
 @media (min-width: 600px) {
 	.cards {
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns:repeat( auto-fit, minmax(300px, 1fr) );
 	}
 }
 
 
+.card-title{
+	font-size:1.5rem;
+}
+@media screen and (min-width:1200px)
+{
+	.card-title
+{
+	font-size:2rem;
+}
+
+}
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .flip-card {
@@ -459,6 +487,9 @@ body {
 	border-radius: 10px;
 	height: 200px;
 	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	perspective: 1000px;
         
 }
@@ -508,7 +539,7 @@ body {
 .flip-card-front {
 	background-color: rgb(250, 250, 250);
 	color: black;
-	font-size: 10px;
+	padding: 1rem;
 }
 
 
@@ -518,6 +549,7 @@ body {
 	background-color: #f7af02;
 	color: white;
 	padding: 1rem;
+	font-size:25px;
 	transform: rotateY(180deg);
 }
 
@@ -530,8 +562,86 @@ body {
 	height: 100%;
 	text-align: center;
 }
+.project-cards {
+	padding: 1rem;
+	margin: 0 auto;
+	display: grid;
+	grid-gap: 2rem;
+	margin-bottom: -2rem;
+}
+
+/* Screen larger than 600px? auto columns */
+
+@media (min-width: 600px) {
+	.project-cards {
+		grid-template-columns:repeat( auto-fit, minmax(300px, 1fr) );
+	}
+}
+.project-flip-card {
+	background-color: transparent;
+	color: white;
+	border-radius: 10px;
+	height:400px;
+	margin: 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        
+}
+
+.project-flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	border-radius:10px;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+
+}
 
 
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.project-flip-card:hover .project-flip-card-inner {
+	box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+
+
+/* Position the front and back side */
+
+.project-flip-card-front
+ {
+	position: absolute;
+	width: 100%;	
+	height: 100%;
+	padding: 1rem;
+	-webkit-backface-visibility: hidden;
+	/* Safari */
+	backface-visibility: hidden;
+}
+.project-flip-card-front:hover{
+	
+	transition :250ms ease-in-out ;
+}
+
+/* Style the front side (fallback if image is missing) */
+
+.project-flip-card-front {
+	background-color:#ffffff;
+	border-radius: 10px;
+	color: black;
+	padding: 1rem;
+}
+.lower{
+	background: #004387;
+	width: 100%;
+	color:#fff;
+}
+.lower h1{
+	font-size:30px;
+}
 /* Section 5 start */
 
 .section-5 {
@@ -539,12 +649,17 @@ body {
 }
 
 .points {
-	padding: 1rem;
+	padding: 0.5rem;
+
 }
 
+.point-child{
+	padding:1rem;
+	padding-left: 20px;;
+}
 .point-title {
 	color: #000;
-	font-size: 30px;
+	font-size: 40px;
 }
 
 .point-no {
@@ -557,11 +672,23 @@ body {
 
 .point-text {
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 25px;
 	color: grey;
 }
 
-.footer {
+/* section 6 start */
+
+.section-6{
+	background: #fff;
+
+}
+
+.footer-1{
+	display:inline-block;
+	padding:1rem;
+
+}
+.footer-2 {
 	display: block;
 	background-color: #004387;
 	padding: 1rem;
@@ -571,7 +698,8 @@ body {
 .footer-logo {
 	color: #fff;
 	font-weight: 900;
-	font-size: 1.5rem;
+	font-size: 2rem;
+	text-align: center;
 }
 
 .footer-links a {
@@ -579,12 +707,20 @@ body {
 	color: #fff;
 	text-decoration: none;
 }
+.footer-links a:hover{
+	color:#f7af02;
+}
 .footer:placeholder {
 	color: #fff;
 }
 .footer-icons a {
 	color: #fff;
-	padding: 20px 20px;
+	padding:0px 10px;
+}
+.social{
+	background-color: #f7af02;
+	padding:1rem;;
+	border-radius:50%;
 }
 .footer-btn {
 	font-weight: 800;
@@ -598,16 +734,6 @@ body {
 @media screen and (min-width:600px) {
 	.footer-btn {
 		width: 40%;
-	}
-	*{
-		font-size: 100%;
-
-	}
-	h1{
-		font-size: 3rem;
-	}
-	h3{
-		font-size: 2rem;;
 	}
 }
 .footer-inpt {
@@ -646,6 +772,6 @@ hr {
 	transition: .3s ease-in-out;
 }
 .service-icon {
-	font-size: 40px;
+	font-size: 50px;
 	color: #f7af02;
 }
