@@ -11,12 +11,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 @font-face {
 	font-family: font6;
-	src: url("proxima_ssv/Proxima\ Nova\ Black.otf");
+	src: url("../fonts/Proxima\ Nova\ Extrabold.otf");
 }
 
 @font-face {
 	font-family: font1;
-	src: url("proxima_ssv/Proxima\ Nova\ Thin.otf");
+	src: url("../fonts/Proxima\ Nova\ Thin.otf");
 }
 
 .font1{
@@ -27,8 +27,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .font3 {
 	font-family: 'Nunito', sans-serif;
 }
-
-
 .font6 {
 	font-family: font6;
 }
@@ -354,7 +352,7 @@ body {
 }
 
 .contact-via-wa {
-	width: 100px;;
+	width:100px;
 	font-weight: 800;
 	margin: auto;
 	border-radius:50%;
@@ -388,6 +386,7 @@ body {
 .contact-via-wa , .contact-via-fbm , .contact-via-mail{
 margin:5px;
 }
+
 .illust {
 display: flex;
 justify-content: center;
@@ -396,7 +395,6 @@ align-items: center;
 
 .img-1 {
 	max-width: 100%;
-
 }
 
 
@@ -451,10 +449,10 @@ align-items: center;
 
 .cards {
 	padding: 1rem;
-
+	
 	margin: 0 auto;
 	display: grid;
-	grid-gap: 2rem;
+	grid-gap: 1rem;
 	margin-bottom: -2rem;
 }
 
@@ -464,6 +462,7 @@ align-items: center;
 @media (min-width: 600px) {
 	.cards {
 		grid-template-columns:repeat( auto-fit, minmax(300px, 1fr) );
+	
 	}
 }
 
@@ -557,9 +556,9 @@ align-items: center;
 /* Section 4 start */
 
 .section-4 {
-	background-color: #004387;
-	color: #fff;
-	height: 100%;
+	background-color: #fff;
+	color: #000;
+	height: auto;
 	text-align: center;
 }
 .project-cards {
@@ -580,7 +579,6 @@ align-items: center;
 .project-flip-card {
 	background-color: transparent;
 	color: white;
-	border-radius: 10px;
 	height:400px;
 	margin: 1rem;
 	display: flex;
@@ -634,46 +632,12 @@ align-items: center;
 	color: black;
 	padding: 1rem;
 }
-.lower{
-	background: #004387;
-	width: 100%;
-	color:#fff;
-}
-.lower h1{
-	font-size:30px;
-}
+
+
 /* Section 5 start */
 
 .section-5 {
-	background: #fff;
-}
-
-.points {
-	padding: 0.5rem;
-
-}
-
-.point-child{
-	padding:1rem;
-	padding-left: 20px;;
-}
-.point-title {
-	color: #000;
-	font-size: 40px;
-}
-
-.point-no {
-	width: 50px;
-	height: 50px;
-	padding: 1rem;
-	background: #f7af02;
-	color: #fff;
-}
-
-.point-text {
-	font-weight: 300;
-	font-size: 25px;
-	color: grey;
+	background: #004387;
 }
 
 /* section 6 start */
@@ -683,18 +647,12 @@ align-items: center;
 
 }
 
-.footer-1{
-	display:inline-block;
-	padding:1rem;
-
-}
-.footer-2 {
+.footer-2{
 	display: block;
 	background-color: #004387;
 	padding: 1rem;
 	color: #fff;
 }
-
 .footer-logo {
 	color: #fff;
 	font-weight: 900;
@@ -715,7 +673,7 @@ align-items: center;
 }
 .footer-icons a {
 	color: #fff;
-	padding:0px 10px;
+	padding: 10px 10px;
 }
 .social{
 	background-color: #f7af02;
