@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+   article.project-card {	
+	 width: 300px;
+	 height: 350px;
+	 border-radius: 3px;
+	 box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+	 overflow: hidden;
+}
+   article.project-card .project-img {
+	 width: auto;
+	 height: 260px;	
+	 border-radius:3px;
+}
+   article.project-card .infos {
+	 width: auto;
+	 height: 300px;
+	 position: relative;
+     padding: 1rem;
+	 background: #fff;
+	 transition: 0.4s 0.15s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+   article.project-card .infos .title {
+	 position: relative;
+	 margin: 10px 0;
+	 letter-spacing: 3px;
+	 color: #152536;
+	 font-family: 'Grotesque Black', sans-serif;
+	 font-size: 1rem;
+	 text-transform: uppercase;
+	 text-shadow: 0 0 0px #32577f;
+}
+   article.project-card .infos .txt {
+	
+	 line-height: 2;
+	 font-size: 0.95rem;
+	 color: rgba(21, 37, 54, .7);
+	 opacity: 1;
+	 transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+   article.project-card .details {
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0 auto;
+     color: #fff;
+     background-color: #f7af02;
+	 font-family: 'Grotesque Black', sans-serif;
+	 font-size: 0.9rem;
+	 text-transform: uppercase;
+	 cursor: pointer;
+	 opacity: 1;
+	 transition: 0.5s 0.25s cubic-bezier(0.17, 0.67, 0.5, 1.03);
+}
+   article.project-card:hover .infos {
+	 transform: translateY(-200px);
+}
+
+ 
+    </style>
+</head>
+<body>
+  <article class="project-card">
+    <div class="img"><img class="project-img" src="../img/duotone.png" alt="" width="100"></div>
+    <div class="infos">
+        <div class="text">
+            <h2 class="title">Project One</h2>
+        <p class="txt">Join us for our Live Infinity Session in beautiful New York City. This is a 3 day intensive workshop where you'll learn how to become a better version of...</p>   
+        </div>
+        <div class="btn details"><a href="hsh">Check This</a></div>
+    </div>
+</article>
+<br>
+<article class="project-card">
+    <div class="img"><img class="project-img" src="../img/welcome-img.png" alt="" width="200"></div>
+    <div class="infos">
+        <div class="text">
+            <h2 class="title">Project One</h2>
+        <p class="txt">Join us for our Live Infinity Session in beautiful New York City. This is a 3 day intensive workshop where you'll learn how to become a better version of...</p>   
+        </div>
+        <div class="btn details"><a href="hsh">Check This</a></div>
+    </div>
+</article>
+</body>
+</html>
