@@ -799,8 +799,8 @@ body {
 }
 
 @media screen and (min-width:600px) {
-  .footer-btn {
-
+  .content-item .footer-btn {
+  width: 50%;
   }
 }
 
